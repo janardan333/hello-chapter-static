@@ -1,0 +1,15 @@
+.thank-you-wrapper {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.thank-you-wrapper img {
+  max-width: 110px;
+}
+.thank-you-wrapper p {
+  font-size: 22px;
+  list-style: 42px;
+  margin-top: 50px;
+}/*# sourceMappingURL=thankyou-style.css.map */

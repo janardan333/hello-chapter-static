@@ -1,0 +1,37 @@
+$black:#231F20;
+$white:#ffffff;
+$text-color:#231F20;
+$pearl-drop:#F9F4ED;
+$pearl-drop2:#Faf5ee;
+$pearl-drop3:#F3E3D8;
+$dawn-pink:#F2E2D7;
+$light-pink:#e1cdc0;
+$light-pink2:#D7C3B6;
+$red:red;
+$red2: #F67A7A;
+$border-color:#C2C2C2;
+$text-color2:#BDB8B8;
+.pearl-bg {
+    background-color: $pearl-drop;
+}
+.pearl-bg2 {
+    background-color: $pearl-drop2 !important;
+}
+.pearl-bg3 {
+    background-color: $pearl-drop3;
+}
+.dawn-pink-bg {
+    background-color: $dawn-pink;
+}
+.light-pink-bg {
+    background-color: $light-pink;
+}
+.light-pink-bg2 {
+    background-color: $light-pink2;
+}
+.white-bg {
+    background-color: $white;
+}
+.black-bg {
+    background-color: $black;
+}

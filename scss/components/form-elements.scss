@@ -1,0 +1,324 @@
+@import "../mixin.scss";
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    font-size: 17px;
+    line-height: 1;
+    font-family: "Inter";
+    font-weight: 300;
+    padding-bottom: 25px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $text-color;
+    color: $text-color;
+    border-radius: 0;
+
+    @include placeholder-text {
+        letter-spacing: 0;
+        color: $text-color;
+    }
+
+    option {
+        font-size: 17px;
+    }
+}
+
+.input-wrap {
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $black;
+        display: block;
+        transform: scaleX(0);
+        transition: transform 1s 1s;
+        transform-origin: left;
+    }
+
+    &.error {
+        &:after {
+            background-color: $red;
+        }
+
+        .form-control::placeholder,
+        .form-control::-webkit-input-placeholder,
+        .form-control::-ms-input-placeholder,
+        .form-control:-ms-input-placeholder,
+        .form-control::-moz-placeholder,
+        .form-control:-moz-placeholder {
+            color: $red;
+        }
+
+        .form-control {
+            color: $red;
+        }
+    }
+
+    .form-control {
+        border: none;
+        padding-bottom: 20px;
+    }
+}
+
+.aos-animate .input-wrap:after {
+    -webkit-transform: scaleX(1) !important;
+    -ms-transform: scaleX(1) !important;
+    transform: scaleX(1) !important;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.select-wrapper {
+    position: relative;
+
+    &:before {
+        content: "";
+        height: 7px;
+        min-width: 13px;
+        width: 13px;
+        background-color: transparent;
+        background-image: url('https://chapter-dev-endpoinnt.azureedge.net/public/assets/cdn/icons/ico-chevron.svg');
+        background-size: 100% 100%;
+        background-position: 50%;
+        display: block;
+        transition: transform 0.3s, -webkit-transform 0.3s;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0px;
+    }
+}
+
+.btn-style-removed {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-submit {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-decoration: none;
+    color: $text-color;
+}
+
+.btn-black {
+    background-color: $black;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-decoration: none;
+    color: $white;
+    min-width: 139px;
+    min-height: 45px;
+    border: 1px solid $black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    text-transform: initial;
+
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+}
+
+.btn-white {
+    background-color: $white;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-decoration: none;
+    color: $black;
+    min-width: 139px;
+    min-height: 45px;
+    border: 1px solid $white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+
+    &:hover {
+        background-color: transparent;
+        color: $white;
+    }
+}
+
+.nice-select {
+    border-radius: 0;
+    height: auto;
+    float: none;
+
+    .current {
+        color: $text-color2;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .option.selected {
+        font-weight: 400;
+    }
+
+    .list {
+        max-height: 323px;
+        overflow: hidden;
+        overflow-y: auto;
+        width: calc(100% + 2px);
+        margin-top: 1px;
+        border-radius: 0;
+        box-shadow: none;
+        border: 0.5px solid $text-color;
+        border-top: none;
+        left: -1px;
+        font-size: 17px;
+        line-height: 40px;
+        font-weight: 400;
+
+        li {
+            padding: 0 13px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    .selected,
+    .option:hover,
+    .focus {
+        color: $white;
+        background-color: $black !important;
+    }
+
+    &.open {
+        .current {
+            color: $text-color;
+        }
+    }
+}
+
+// nice-select end
+.custom-dropdown {
+    .nice-select {
+        border: none;
+        width: 100%;
+        font-size: 17px;
+        line-height: 1;
+        font-family: "Inter";
+        font-weight: 300;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $text-color;
+        color: $text-color;
+        border-radius: 0;
+        padding: 12px 0 23px;
+
+        @include placeholder-text {
+            letter-spacing: 0;
+            color: $text-color;
+        }
+
+        &:after {
+            border: none;
+            background-image: url('../../images/icons/ico-chevron.svg');
+            height: 7px;
+            width: 12px;
+            background-position: center center;
+            background-size: contain;
+            transform: none;
+        }
+
+        option {
+            font-size: 17px;
+        }
+    }
+    &.update-selected-option {
+        .current {
+            color: $text-color;
+        }
+    }
+    .option.disabled {
+        cursor: not-allowed;
+    }
+    .nice-select .list:hover .option:not(:hover) {
+       background-color:  #f6f6f6 !important;
+       color: $black;
+    }
+}
+
+// Responsive CSS start
+@media (max-width:1440px) {
+    .form-control {
+        font-size: 14px;
+
+        option {
+            font-size: 14px;
+        }
+    }
+    .nice-select .list {
+        font-size: 14px;
+    }
+    .custom-dropdown {
+        .nice-select {
+            font-size: 14px;
+
+            option {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .btn-submit {
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+
+// 1440 end
+@media (max-width:767px) {
+    .nice-select.open .list {
+        font-size: 14px;
+        line-height: 35px;
+
+        .option {
+            line-height: 35px;
+        }
+    }
+}
+
+// 767 end

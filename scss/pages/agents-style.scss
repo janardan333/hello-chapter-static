@@ -1,0 +1,1066 @@
+@import "../classes.scss";
+@import "../common.scss";
+@import "../components/header.scss";
+@import "../components/slider.scss";
+@import "../components/chapter-content.scss";
+@import "../components/category.scss";
+@import "../components/image-content.scss";
+@import "../components/plan-design-build-home.scss";
+@import "../components/home-project-fingertips.scss";
+@import "../components/section-get-started-with-renovation-project.scss";
+@import "../components/section-client-slider";
+@import "../components/modals.scss";
+@import "../components/footer-dynamic.scss";
+
+header {
+  padding: 50px 0 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+
+  .compass-chapter-img {
+    line-height: 0;
+  }
+  h2 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 55px;
+  }
+}
+.mobile-hide {
+  display: block;
+}
+.desktop-hide {
+  display: none;
+}
+
+.middle-content {
+  padding-top: 153px;
+  .black-btn-bg {
+    background-color: $black;
+    color: $white;
+    border: 1px solid $black;
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+  .btn-compass {
+    min-width: 249px;
+    display: inline-block;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 19px;
+    text-align: center;
+    padding: 23px 21px;
+
+    // &:first-child {
+    //   margin-right: 24px;
+    // }
+  }
+  .your-renovation-partner {
+    .col {
+      max-width: 50%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+    }
+  }
+
+  .renovation-partner-content {
+    padding: 58px 98px 115px 115px;
+    h1 {
+      font-family: "Times";
+      font-size: 75px;
+      line-height: 85px;
+      font-weight: 700;
+      margin-bottom: 60px;
+    }
+    .renovation-partner-para {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 35px;
+      margin-bottom: 60px;
+    }
+  }
+  .book-generate-btn {
+    margin-bottom: 60px;
+    gap: 24px;
+
+    .white-btn-bg {
+      background-color: $white;
+      color: $black;
+      border: 1px solid $black;
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+  .need-information {
+    h3 {
+      font-weight: 700;
+      font-family: "Inter";
+      font-size: 20px;
+      line-height: 35px;
+      margin-bottom: 12px;
+    }
+    img {
+      margin-right: 18px;
+    }
+    .profile-name {
+      font-family: "Times";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 7px;
+    }
+    .profile-info {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+    }
+    .profile-email,
+    a {
+      color: $black;
+      font-family: "Inter";
+      font-weight: 400;
+      line-height: 24px;
+      font-size: 17px;
+    }
+    .profile-email {
+      text-decoration: underline;
+      text-underline-offset: 3.3px;
+    }
+    span {
+      width: 4px;
+      height: 4px;
+      background-color: $black;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .renovation-partner-image {
+    padding-inline: 115px;
+    padding-top: 100px;
+    .renovation-partner-background-img {
+      background-image: url(/images/compass/agents/rightsideimg.webp);
+      min-height: 718px;
+    }
+    .right-side-img-clap-mobile {
+      background-image: url(/images/compass/agents/rightsidemobilevisiblewhiteshirt.webp);
+      min-height: 299px;
+    }
+  }
+
+  // Your renovation partner for every deal Section ends
+
+  .founding-vision-our-story {
+    padding: 115px;
+    background-color: $black;
+    color: $white;
+    h5 {
+      font-family: "Times";
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 57px;
+      margin-bottom: 60px;
+    }
+    .creation-innovation {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      row-gap: 60px;
+      column-gap: 89px;
+    }
+    .we-para-heading {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 6px;
+    }
+    .black-we-paragraph {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: 0;
+      &:nth-child(2) {
+        padding-bottom: 30px;
+      }
+    }
+    .img-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(35, 31, 32, 0.9);
+      padding: 0 40px;
+      width: auto;
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 40px;
+      color: $white;
+    }
+    .founding-right-bg-image {
+      background-image: url(/images/compass/agents/homeadditioncoralgables.webp);
+      min-height: 407px;
+      position: relative;
+    }
+    .founding-left-bg-image {
+      background-image: url(/images/compass/agents/penthousebgimagepenthouse.webp);
+      min-height: 372px;
+      position: relative;
+    }
+  }
+  .partner-image-exclusive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    color: $black;
+    .why-partner-with-chapter {
+      align-self: center;
+      background-color: #faf5ee;
+    }
+    .head-para {
+      margin: 115px 115px 155px 115px;
+    }
+    .partner-head {
+      font-family: "Times";
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 57px;
+      margin-bottom: 30px;
+    }
+    .partner-para {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 35px;
+    }
+    .why-partner-hellochapter-img {
+      background-image: url(/images/compass/agents/chapterimgcompass.webp);
+      min-height: 640px;
+    }
+    .exclusive-3-year-warranty {
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      column-gap: 144px;
+      row-gap: 72px;
+      background-color: $pearl-drop3;
+      padding: 115px 158px 136px 158px;
+      align-content: space-around;
+    }
+    .warranty-img {
+      line-height: 0;
+    }
+
+    .exclusive-items {
+      align-self: start;
+    }
+    .exclusive-img {
+      margin-bottom: 24px;
+    }
+    .exclusive-head {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 7px;
+      min-height: 40px;
+    }
+    .exclusive-para {
+      padding-inline: 2px;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 35px;
+    }
+  }
+  .agent-benefits-wrapper {
+    color: $white;
+    background-color: $black;
+    .agent-benefits {
+      padding: 115px 0;
+      color: $pearl-drop2;
+    }
+    .agent-benefits-head {
+      font-family: "Times";
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 30px;
+    }
+    .agent-benefits-para {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 34px;
+    }
+    .agents-benefits-numbers {
+      max-width: 1272px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      h3 {
+        font-family: "Times";
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 17px;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      .col {
+        &:nth-child(2) {
+          max-width: 18%;
+          flex: 0 0 18%;
+        }
+      }
+    }
+    .agents-benefits-last-content {
+      max-width: 695px;
+      margin: 0 auto;
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      sup {
+        line-height: 0;
+      }
+    }
+  }
+  .client-expert-visualize {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    .client-save-earn {
+      background-color: $pearl-drop2;
+    }
+    .client-expert-visualize-box {
+      margin: 0 204px 0 115px;
+      padding: 119px 0 154px;
+    }
+    .client-save-earn-head {
+      font-family: "Times";
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 52px;
+      margin-bottom: 30px;
+      letter-spacing: 0;
+      width: 587px;
+    }
+    .client-save-earn-para {
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 35px;
+      margin-bottom: 30px;
+      letter-spacing: 0;
+      sup{
+        line-height: 0;
+      }
+    }
+    .referral-program-image {
+      background-image: url(/images/compass/agents/referralprogram.webp);
+      min-height: 667px;
+      padding-bottom: 69%;
+    }
+
+    .right-two-white-tshirts {
+      background-image: url(/images/compass/agents/whiteshirtrightside.webp);
+      min-height: 926px;
+      // display: none;
+      padding-bottom: 47%;
+    }
+    .right-two-white-tshirts-tablet {
+      background-image: url(/images/compass/agents/rightsidetabletwhitetshirt.webp);
+      display: none;
+    }
+    .right-two-white-tshirts-mobile {
+      background-image: url(/images/compass/agents/rightsidetwotshirtsmobile.webp);
+      display: none;
+    }
+    .visualize-the-potential {
+      background-image: url(/images/compass/agents/visualfloorplans.webp);
+      min-height: 781px;
+      padding-bottom: 33%;
+    }
+    .visualize-the-potential-mobile {
+      background-image: url(/images/compass/agents/visualisethepotentialformobile.webp);
+      display: none;
+    }
+
+    .visualize-the-potential-with-rendering {
+      background-color: #faf5ee;
+    }
+    .complimentary-lists {
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 35px;
+      margin-top: 30px;
+      sup {
+        line-height: 0;
+      }
+    }
+  }
+}
+
+// responsive starts
+
+@media (max-width: 1630px) {
+  .middle-content .renovation-partner-content {
+    padding: 58px 70px 115px 115px;
+  }
+  .middle-content .renovation-partner-image {
+    padding-left: 70px;
+    padding-right: 115px;
+  }
+  .middle-content .client-expert-visualize .client-save-earn-head{
+    width: auto;
+  }
+  
+}
+// 1603 ends
+@media (max-width: 1599px) {
+  .middle-content .renovation-partner-content h1 {
+    font-size: 70px;
+  }
+}
+// 1599 ends
+
+@media (max-width: 1440px) {
+  .middle-content .renovation-partner-content {
+    padding: 55px 50px 100px 60px;
+  }
+  .middle-content .renovation-partner-image {
+    padding-right: 60px;
+    padding-left: 55px;
+  }
+  .middle-content .founding-vision-our-story {
+    padding: 100px 60px;
+  }
+  .middle-content .partner-image-exclusive .head-para {
+    margin: 60px;
+  }
+  .middle-content .agent-benefits-wrapper .agent-benefits {
+    padding: 100px;
+  }
+  .middle-content .client-expert-visualize .client-expert-visualize-box {
+    margin-inline: 60px;
+    padding: 100px 0 125px;
+  }
+  .middle-content .partner-image-exclusive .exclusive-3-year-warranty {
+    column-gap: 125px;
+    row-gap: 50px;
+    padding: 100px 60px 100px 100px;
+  }
+  .middle-content .partner-image-exclusive .exclusive-img {
+    margin-bottom: 18px;
+  }
+  .middle-content .need-information .profile-name {
+    font-size: 30px;
+  }
+  .middle-content .client-expert-visualize .referral-program-image {
+    min-height: 612px;
+  }
+  .middle-content .client-expert-visualize .right-two-white-tshirts {
+    min-height: 902px;
+  }
+  .middle-content .client-expert-visualize .visualize-the-potential {
+    min-height: 762px;
+  }
+}
+
+// 1440 ends
+
+@media (max-width: 1380px) {
+  .middle-content .partner-image-exclusive .exclusive-3-year-warranty {
+    column-gap: 100px;
+    row-gap: 40px;
+  }
+  .middle-content .partner-image-exclusive .exclusive-img {
+    margin-bottom: 12px;
+  }
+  .middle-content .client-expert-visualize .client-expert-visualize-box {
+    margin-inline: 60px;
+    padding: 43px 0 90px;
+  }
+  .middle-content .client-expert-visualize .referral-program-image {
+    min-height: 605px;
+  }
+  .middle-content .client-expert-visualize .right-two-white-tshirts {
+    min-height: 845px;
+  }
+  
+}
+
+// 1380 ends
+
+@media (max-width: 1280px) {
+  .middle-content .book-generate-btn {
+    gap: 7px;
+  }
+  .middle-content .renovation-partner-content {
+    padding-right: 40px;
+  }
+  .middle-content .renovation-partner-image {
+    padding-left: 40px;
+  }
+  .middle-content .founding-vision-our-story .creation-innovation {
+    column-gap: 80px;
+  }
+  .middle-content .partner-image-exclusive .exclusive-3-year-warranty {
+    column-gap: 90px;
+    row-gap: 30px;
+  }
+  .middle-content .client-expert-visualize .client-expert-visualize-box {
+    padding: 80px 0 53px;
+  }
+  .middle-content .agent-benefits-wrapper .agent-benefits {
+    padding: 80px;
+  }
+}
+
+// 1280 ends
+
+@media (max-width: 1220px) {
+  // for button
+  .middle-content .renovation-partner-content {
+    padding-right: 20px;
+  }
+  .middle-content .renovation-partner-image {
+    padding-left: 20px;
+  }
+  .middle-content .btn-compass {
+    padding: 23px 6px;
+    min-width: 230px;
+  }
+  .middle-content .partner-image-exclusive .exclusive-3-year-warranty {
+    padding: 100px 60px 100px 60px;
+    column-gap: 60px;
+  }
+}
+// 1220 ends
+
+@media (max-width: 1102px) {
+  .middle-content .btn-compass {
+    padding: 20px 2px;
+    min-width: 210px;
+  }
+  .middle-content .founding-vision-our-story .img-label {
+    padding: 0 20px;
+  }
+}
+
+// 1102 ends
+
+@media (max-width: 1023px) {
+  header {
+    padding: 50px 0 25px;
+    h2 {
+      line-height: 30px;
+      margin-top: 7.4px;
+    }
+  }
+  .middle-content .your-renovation-partner .col {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .middle-content .renovation-partner-content {
+    padding: 60px;
+    text-align: center;
+  }
+  .middle-content .renovation-partner-content h1 {
+    margin-bottom: 30px;
+    line-height: 80px;
+    margin-inline: -3px;
+  }
+  .middle-content .renovation-partner-content .renovation-partner-para {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .need-information img {
+    width: 90px;
+  }
+  .renovation-partner-para strong {
+    font-weight: 700;
+  }
+  .middle-content .book-generate-btn {
+    display: flex;
+  }
+  .middle-content .btn-compass {
+    padding: 15px 21px;
+    flex: 0 1 48.1%;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .middle-content .need-information h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  .middle-content .book-generate-btn {
+    gap: 24px;
+  }
+  .middle-content .book-generate-btn {
+    margin-bottom: 30px;
+  }
+  .need-information .director-profile {
+    justify-content: center;
+  }
+  .middle-content .need-information .profile-info {
+    text-align: start;
+  }
+  .middle-content .need-information .profile-name {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .middle-content .need-information .profile-info {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .need-information .profile-email,
+  .middle-content .need-information a {
+    font-size: 14px;
+  }
+  .middle-content .renovation-partner-image {
+    padding: 0;
+  }
+  .middle-content .renovation-partner-image .renovation-partner-background-img {
+    min-height: 373px;
+    background-position: top;
+  }
+  .middle-content .founding-vision-our-story {
+    padding: 60px 30px;
+  }
+  .middle-content .founding-vision-our-story h5 {
+    letter-spacing: -0.15px;
+    margin-bottom: 30px;
+    line-height: 50px;
+  }
+  .middle-content .founding-vision-our-story .we-para-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  .middle-content .founding-vision-our-story .black-we-paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .founding-vision-our-story .creation-innovation {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .middle-content .partner-image-exclusive .partner-head {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .middle-content .partner-image-exclusive .partner-para {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .partner-image-exclusive .exclusive-img {
+    width: 32px;
+  }
+  .middle-content .partner-image-exclusive .exclusive-head {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: auto;
+    margin-bottom: 0;
+  }
+  .middle-content .partner-image-exclusive .exclusive-para {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .founding-left-bg-image {
+    &:nth-child(3) {
+      grid-row: 4;
+    }
+  }
+  .middle-content .founding-vision-our-story .founding-right-bg-image {
+    min-height: 359px;
+  }
+  .middle-content .founding-vision-our-story .founding-left-bg-image {
+    min-height: 359px;
+  }
+  .middle-content .founding-vision-our-story .img-label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .founding-vision-our-story .img-label {
+    padding: 0 30px;
+  }
+  .why-partner-with-chapter {
+    grid-column: 1 / span 2;
+    grid-area: item1;
+  }
+  .middle-content .partner-image-exclusive .exclusive-3-year-warranty {
+    grid-column: 1 / span 2;
+    grid-area: item2;
+    padding: 0px 100px 60px;
+  }
+
+  .why-partner-hellochapter-img {
+    grid-column: 1 / span 2;
+    grid-area: item3;
+  }
+  .middle-content .partner-image-exclusive {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+    grid-template-columns: 1fr;
+  }
+  .middle-content .client-expert-visualize .right-two-white-tshirts-tablet {
+    display: block;
+    // grid-row: 3;
+    background-position: top;
+    min-height: 512px;
+  }
+  .middle-content .client-expert-visualize .right-two-white-tshirts {
+    display: none;
+  }
+  .middle-content .partner-image-exclusive .head-para {
+    text-align: center;
+    max-width: 555px;
+    margin: 60px auto 30px;
+  }
+  .visualize-the-potential-with-rendering {
+    grid-row: 7;
+  }
+  .middle-content .partner-image-exclusive .why-partner-with-chapter {
+    background-color: $pearl-drop3;
+  }
+  .middle-content .partner-image-exclusive .why-partner-hellochapter-img {
+    min-height: 454px;
+    background-position: top;
+  }
+  .middle-content .agent-benefits-wrapper .agent-benefits {
+    padding: 60px 32px;
+  }
+  .middle-content .agent-benefits-wrapper .agent-benefits-head {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+  .middle-content .agent-benefits-wrapper .agent-benefits-para {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 30px;
+  }
+  .middle-content .agent-benefits-wrapper .agents-benefits-numbers h3 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 6px;
+  }
+  .middle-content .agent-benefits-wrapper .agents-benefits-numbers p {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+  }
+  .middle-content .agent-benefits-wrapper .agents-benefits-numbers p strong {
+    font-weight: 600;
+  }
+  .agents-benefits-numbers .col {
+    max-width: 33%;
+    flex: 0 0 33%;
+  }
+  .middle-content
+    .agent-benefits-wrapper
+    .agents-benefits-numbers
+    .col:nth-child(2) {
+    max-width: 29%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33%;
+    flex: 0 0 29%;
+  }
+  .middle-content .agent-benefits-wrapper .agents-benefits-numbers {
+    max-width: 664px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .middle-content .client-expert-visualize {
+    grid-template-columns: 1fr;
+  }
+  .middle-content .client-expert-visualize .referral-program-image {
+    grid-row: 1;
+    min-height: 512px;
+    background-position: top;
+  }
+  .middle-content .client-expert-visualize .client-expert-visualize-box {
+    padding: 60px 0;
+    .btn-compass {
+      min-width: 309px;
+    }
+  }
+  .middle-content .client-expert-visualize .client-save-earn-para {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    strong {
+      font-weight: 700;
+    }
+  }
+  .middle-content .client-expert-visualize .right-two-white-tshirts {
+    grid-row: 3;
+    min-height: 512px;
+    background-position: top;
+  }
+  .middle-content .client-expert-visualize .visualize-the-potential {
+    min-height: 512px;
+    background-position: top;
+  }
+  .middle-content .client-expert-visualize .client-save-earn-head{
+    width: 455px;
+  }
+}
+
+// 1023 ends
+
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none;
+  }
+  .desktop-hide {
+    display: block;
+  }
+  .compass-chapter-img {
+    img {
+      width: 350px;
+      height: 30px;
+    }
+  }
+  header {
+    padding: 27px 0;
+    h2 {
+      padding-inline: 36px;
+      margin-top: 28px;
+    }
+  }
+  .middle-content {
+    padding-top: 180px;
+  }
+  .middle-content .book-generate-btn {
+    flex-wrap: wrap;
+  }
+  // for images
+  .middle-content .client-expert-visualize .right-two-white-tshirts-tablet {
+    min-height: 366px;
+    display: none;
+  }
+  .middle-content .client-expert-visualize .right-two-white-tshirts-mobile {
+    display: block;
+    min-height: 366px;
+  }
+
+  .middle-content .client-expert-visualize .referral-program-image {
+    min-height: 260px;
+  }
+
+  .middle-content .client-expert-visualize .client-expert-visualize-box {
+    margin-inline: 20px;
+  }
+  .middle-content .client-expert-visualize .right-two-white-tshirts {
+    min-height: 366px;
+  }
+  .middle-content .client-expert-visualize .visualize-the-potential {
+    min-height: 260px;
+    display: none;
+  }
+  .middle-content .client-expert-visualize .visualize-the-potential-mobile {
+    min-height: 260px;
+    display: block;
+  }
+  .middle-content .founding-vision-our-story .founding-right-bg-image {
+    min-height: 311px;
+    background-position: center left;
+  }
+  .middle-content .founding-vision-our-story .founding-left-bg-image {
+    min-height: 311px;
+  }
+  // for images ends
+  .middle-content .renovation-partner-content {
+    padding: 10px 20px 31px 20px;
+  }
+  .middle-content .renovation-partner-content h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    padding-inline: 15px;
+  }
+  .middle-content .renovation-partner-content .renovation-partner-para {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .btn-compass {
+    padding: 15px 21px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    flex: 1 1 100%;
+  }
+  .middle-content .need-information img {
+    width: 76px;
+  }
+  .middle-content .need-information .profile-name {
+    margin-bottom: 12px;
+  }
+  .middle-content .renovation-partner-image .renovation-partner-background-img {
+    min-height: 299px;
+  }
+  .middle-content .founding-vision-our-story {
+    padding: 60px 20px;
+  }
+  .middle-content .founding-vision-our-story h5 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .middle-content .founding-vision-our-story .we-para-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  .middle-content .founding-vision-our-story .black-we-paragraph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .founding-vision-our-story .creation-innovation {
+    row-gap: 30px;
+  }
+  .middle-content .founding-vision-our-story .img-label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .middle-content .client-expert-visualize .client-save-earn-head{
+    width: auto;
+    line-height: 52px;
+  }
+  .middle-content .partner-image-exclusive .partner-head-mobile {
+    font-family: "Times";
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    max-width: 304px;
+    margin: 60px auto 30px;
+  }
+
+  .why-choose-chapter-mobile {
+    grid-column: 1 / span 2;
+    grid-area: item1;
+    background-color: #f3e3d8;
+  }
+
+  .middle-content .partner-image-exclusive .exclusive-3-year-warranty {
+    row-gap: 32px;
+    padding: 0px 53px 60px;
+    grid-template-columns: 1fr;
+  }
+  .middle-content .partner-image-exclusive .why-partner-hellochapter-img {
+    min-height: 158px;
+  }
+
+  // /black box going on
+  .middle-content .agent-benefits-wrapper .agent-benefits {
+    padding: 60px 20px;
+  }
+  .middle-content .agent-benefits-wrapper .agent-benefits-para {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-content .agent-benefits-wrapper .agent-benefits-para span{
+    display: block;
+  }
+  .agents-benefits-numbers .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 90px;
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .middle-content
+    .agent-benefits-wrapper
+    .agents-benefits-numbers
+    .col:nth-child(2) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    // padding: 0 62px;
+  }
+  .middle-content
+    .client-expert-visualize
+    .client-expert-visualize-box
+    .btn-compass {
+    width: 100%;
+  }
+}
+
+@media (max-width: 389px) {
+  .compass-chapter-img img {
+    width: auto;
+  }
+
+  .middle-content
+    .client-expert-visualize
+    .client-expert-visualize-box
+    .btn-compass {
+    min-width: 100%;
+  }
+  header h2 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 369px) {
+  header h2 {
+    padding-inline: 13px;
+  }
+}
+@media (max-width: 343px) {
+  header h2 {
+    padding-inline: 1px;
+  }
+}

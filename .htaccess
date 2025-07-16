@@ -1,0 +1,77 @@
+RewriteEngine on
+#RedirectMatch 301 /nyc-renovation-projects/?$ /nyc-location/
+#RedirectMatch 301 /blog/ /blog/
+RedirectMatch 301 /projects/tribeca-bathroom-renovation/?$ /project/tribeca-bathroom-renovation/
+#RedirectMatch 301 /project/soho-restaurant-renovation/?$ /project/soho-restaurant-renovation/
+#RedirectMatch 301 /project/penthouse-renovation/?$ /project/penthouse-renovation/
+#RedirectMatch 301 /project/dumbo-bathroom-renovation/?$ /project/dumbo-bathroom-renovation/
+#RedirectMatch 301 /10-tips-to-help-you-get-ready-for-an-apartment-renovation/?$ /10-tips-to-help-you-get-ready-for-an-apartment-renovation
+#RedirectMatch 301 /dos-and-donts-when-renovating-to-increase-property-value/?$ /dos-and-donts-when-renovating-to-increase-property-value
+#RedirectMatch 301 /top-5-nyc-neighborhoods-to-buy-an-apartment-in-now/?$ /top-5-nyc-neighborhoods-to-buy-an-apartment-in-now
+#RedirectMatch 301 /tips-and-design-ideas-for-your-bathroom-renovation/?$ /tips-and-design-ideas-for-your-bathroom-renovation
+#RedirectMatch 301 /why-is-communication-from-the-client-important-during-a-renovation/?$ /why-is-communication-from-the-client-important-during-a-renovation
+#RedirectMatch 301 /top-5-things-to-know-for-renovating-an-apartment-in-nyc/?$ /top-5-things-to-know-for-renovating-an-apartment-in-nyc
+#RedirectMatch 301 /how-much-does-an-apartment-renovation-cost-in-nyc/?$ /how-much-does-an-apartment-renovation-cost-in-nyc
+
+RedirectMatch 301 /contact-chapter-nyc-renovation/?$ /contact-chapter-home-renovation/
+RedirectMatch 301 /about-chapter-nyc-renovation/?$ /about-chapter-home-renovation/
+RedirectMatch 301 /faq/?$ /chapter-renovation-faq/
+RedirectMatch 301 /how-chapter-nyc-renovation-works/?$ /how-chapter-home-renovation-works/
+RedirectMatch 301 /how-it-works/?$ /how-chapter-home-renovation-works/
+RedirectMatch 301 /about/?$ /about-chapter-home-renovation/
+RedirectMatch 301 /locations/?$ /home-renovation-locations/
+RedirectMatch 301 /all-projects/?$ /all-renovation-projects/
+RedirectMatch 301 /nyc/?$ /nyc-renovation-projects/
+RedirectMatch 301 /miami/?$ /miami-renovation-projects/
+
+RedirectMatch 301 /miami-shores-homerenovation/?$	/miami-shores-home-renovation/
+RedirectMatch 301 /miami-brickell-condorenovation/?$	 /miami-brickell-condo-renovation/
+RedirectMatch 301 /nyc-location/?$	/nyc-renovation/
+RedirectMatch 301 /miami-location/?$	/miami-renovation/
+#RedirectMatch 301 /nyc-renovation/?$ 	/home-renovation-nyc/
+RedirectMatch 301 /nyc-renovation/?$ /nyc-renovation-projects/
+RedirectMatch 301 /miami-renovation/?$	/home-renovation-miami/
+RedirectMatch 301 /new-jersey-renovation/?$	/home-renovation-new-jersey/
+RedirectMatch 301 /westchester-ny-renovation/?$	/home-renovation-westchester-ny/
+RedirectMatch 301 /miami-location/?$ /home-renovation-miami/
+RedirectMatch 301 /nyc-apartment-renovation/?$ /nyc-apartment-renovation-contractor/
+
+RedirectMatch 301 /project/park-slope-nyc-coffee-shop-renovation?/$ /project/brooklyn-home-remodel/
+RedirectMatch 301 /project/office-renovation-for-nestseekers/?$ /project/nestseekers-office-renovation/
+RedirectMatch 301 /project/midtown-east-studio-apartment-renovation/?$ /project/manhattan-studio-apartment-renovation/
+RedirectMatch 301 /project/union-square-triplex-apartment-renovation/?$ /project/co-op-triplex-apartment-renovation/
+RedirectMatch 301 /project/broadway-duplex-renovation/?$ /project/upper-west-side-duplex-apartment-renovation/
+RedirectMatch 301 /project/tribeca-apartment-renovation/?$ /project/historic-tribeca-loft-renovation/
+RedirectMatch 301 /project/batteryparkcity-luxury-apartment-renovation/?$  /project/battery-park-city-condo-renovation/
+RedirectMatch 301 /project/ues-three-bedroom-apartment-renovation/?$ /project/ues-co-op-apartment-renovation/
+RedirectMatch 301 /terms-of-service/?$ /terms/
+RedirectMatch 301 /privacy-policy/?$ /privacy/
+RedirectMatch 301 /project/coffee-shop-/?$	 /project/brooklyn-coffee-shop-renovation/
+RedirectMatch 301 /project/park-slope-coffee-shop-renovation/?$ /project/brooklyn-coffee-shop-renovation/
+RedirectMatch 301 /Miami/Renovation/?$ /miami-renovation-projects/
+RedirectMatch 301 /project/soho-restaurant-renovation/?$ /project/soho-nyc-restaurant-renovation/
+RedirectMatch 301 /Miami/Renovations/?$ /miami-renovation-projects/
+RedirectMatch 301 /home-?$ /
+RedirectMatch 301 /wynwood-bathrooms-renovation/footer/?$ /wynwood-bathrooms-renovation/
+RedirectMatch 301 /home-addition-cost-miami/footer?$ /home-addition-cost-miami/
+RedirectMatch 301 /feed/?$ /
+RedirectMatch 301 /project/soho-office-renovation/?$ /project/soho-office-commercial-renovation/
+RedirectMatch 301 /home-renovation-locations/?$ /
+
+RedirectMatch 301 /project/luxury-penthouse-renovation/?$  /project/luxury-penthouse-renovation-5-tudor-city-pl/
+RedirectMatch 301 /project/battery-park-city-apartment-renovation/?$  /project/battery-park-city-apartment-renovation-380-rector-pl/ 
+RedirectMatch 301 /project/pre-war-co-op-combined-apartment-renovation/?$  /project/pre-war-co-op-combined-apartment-renovation-465-w-23rd-st/
+RedirectMatch 301 /project/battery-park-city-condo/?$  /project/battery-park-city-condo-2-river-terrace/
+RedirectMatch 301 /project/luxury-bathroom-renovation-in-new-york-city/?$  /project/luxury-bathroom-renovation-in-new-york-city-75-wall-st/
+RedirectMatch 301 /project/manhattan-condo-full-gut-renovation/?$  /project/manhattan-condo-full-gut-renovation-300-e-54th-st/
+RedirectMatch 301 /project/brooklyn-bathroom-renovation/?$  /project/brooklyn-bathroom-renovation-100-jay-st/
+RedirectMatch 301 /project/greenwich-village-co-op-apartment-renovation/?$  /project/greenwich-village-co-op-apartment-renovation-77-7th-ave/
+RedirectMatch 301 /project/co-op-apartment-renovation-in-financial-district-manhattan/?$  /project/co-op-apartment-renovation-in-financial-district-manhattan-90-gold-street/
+RedirectMatch 301 /project/uws-pre-war-minimalist-studio-apartment-renovation/?$  /project/uws-pre-war-minimalist-studio-apartment-renovation-140-w-69th-st/
+RedirectMatch 301 /project/chelsea-post-war-apartment-renovation/?$  /project/chelsea-post-war-apartment-renovation-555-w-23rd-st/
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]

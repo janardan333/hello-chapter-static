@@ -1,0 +1,1136 @@
+@import "../classes.scss";
+@import "../common.scss";
+@import "../components/header.scss";
+@import "../components/slider.scss";
+@import "../components/plan-design-build-home.scss";
+
+@import "../components/section-values.scss";
+@import "../components/section-client-slider.scss";
+@import "../components/modals.scss";
+@import "../components/accordion.scss";
+@import "../components/footer-dynamic.scss";
+
+.designs-page {
+  .design-intro-section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .desktop-hide {
+    display: none;
+  }
+  .btn-black-bg {
+    font-size: 19px;
+    min-width: 183px;
+    min-height: 67px;
+  }
+
+  // UTILITY ENDS
+  .text-label-wrap {
+    margin: 0 auto;
+    width: auto;
+    display: block;
+    margin-bottom: 17px;
+  }
+  .line {
+    height: 52px;
+    width: 2px;
+    display: block;
+    background-color: black;
+  }
+
+  .design-intro-section-text {
+    align-self: center;
+    padding-left: 115px;
+    .page-title-interior {
+      max-width: 670px;
+    }
+
+    h1 {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 86.25px;
+      letter-spacing: 1.5px;
+    }
+    .content {
+      max-width: 600px;
+      padding: 60px 0;
+    }
+    p {
+      line-height: 34px;
+      letter-spacing: 0.15px;
+      font-weight: 300;
+      font-size: 17px;
+    }
+  }
+  .intro-img {
+    min-height: 728px;
+  }
+  .section-values {
+    padding-bottom: 60px;
+  }
+
+  .our-interiors-design-process-wrapper {
+    padding: 115px 60px;
+    .interior-main-text {
+      margin-bottom: 60px;
+    }
+
+    .interiors-design-process-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 60px 56px;
+      column-gap: 32px;
+      background-color: $pearl-drop2;
+    }
+
+    .interiors-card-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      background-color: $white;
+      border-radius: 32px;
+    }
+
+    .interiors-title {
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28.8px;
+      letter-spacing: -0.48px;
+      font-family: "Inter";
+    }
+    .interiors-card-content {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      p {
+        flex: 1;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 35px;
+        letter-spacing: 0;
+      }
+    }
+    .our-interior-image-wrapper {
+      padding: 38px 32px;
+    }
+
+    .interiors-image {
+      min-height: 234px;
+      border-radius: 32px;
+      box-shadow: 0px 0px 4.4px 0px rgba(0, 0, 0, 0.06),
+        0px 5px 19px 0px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    .image-border {
+      position: absolute;
+      inset: 0;
+      border-width: 8px;
+      border-radius: 32px;
+      border-style: solid;
+      border-color: #ffffff;
+    }
+    .interiors-card-image-product {
+      background-image: url("../../images/design-page-images/firstcardimage.png");
+    }
+    .interiors-card-image-Conceptualize {
+      background-image: url("../../images/design-page-images/secondcardimage.webp");
+    }
+    .interiors-card-image-Develop {
+      background-image: url("../../images/design-page-images/thirdcardimage.webp");
+    }
+    .interiors-card-image-Build {
+      background-image: url("../../images/design-page-images/fourthcardimage.webp");
+    }
+  }
+
+  .chapter-designer-owns-wrapper {
+    padding: 115px 131px 60px 131px;
+    background-color: $pearl-drop2;
+
+    .chapter-designer-main-text {
+      margin-bottom: 64px;
+    }
+    // .chapter-designer-title {
+    //   font-weight: 700;
+    //   font-size: 50px;
+    //   line-height: 50px;
+    //   letter-spacing: 0;
+    // }
+    .chapter-designer-owns-boxes {
+      img {
+        width: 50px;
+      }
+      .image {
+        margin-bottom: 16px;
+      }
+    }
+    .designer-head-title {
+      font-weight: 600;
+      line-height: 33px;
+      letter-spacing: 0;
+      font-size: 17px;
+      font-family: "Inter";
+    }
+    .chapter-designer-owns-grid {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      max-width: 721px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin: 0 auto 82px;
+      row-gap: 24px;
+      column-gap: 24px;
+      padding: 0 18px;
+    }
+    .chapter-designer-owns-prints {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+
+  .design-contractor {
+    padding: 115px 32px;
+    .design-contractor-main-text {
+      margin-bottom: 60px;
+    }
+
+    .design-contractor-table {
+      max-width: 1291px;
+      margin: 0 auto;
+      .mobile-hide {
+        display: block;
+      }
+      .mobile-show {
+        display: none;
+      }
+    }
+    .design-contractor-head {
+      display: grid;
+      grid-template-columns: 0.22fr 0.39fr 0.39fr;
+      grid-template-rows: 70px;
+      align-items: center;
+    }
+    .design-build-header,
+    .design-build-header-two {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .design-icon {
+      display: inline-block;
+      width: max-content;
+      vertical-align: sub;
+      margin-inline: 6px;
+      line-height: 0;
+    }
+    .design-contractor-body {
+      & > :nth-child(even) {
+        background-color: $pearl-drop2;
+      }
+    }
+    .design-contractor-body-grid {
+      display: grid;
+      grid-template-columns: 0.22fr 0.39fr 0.39fr;
+      grid-template-rows: 70px;
+      align-items: center;
+    }
+    .header1 {
+      font-family: "Inter";
+      padding-left: 40.5px;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+    .para1,
+    .para2 {
+      padding-left: 30px;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: 0;
+    }
+  }
+
+  .chapter-design-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $pearl-drop2;
+
+    .design-team-content {
+      padding: 115px 20px 66px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .design-team-content-main-text {
+      margin-bottom: 30px;
+    }
+
+    .design-para {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: 0;
+      padding-bottom: 30px;
+    }
+    .chapter-design-team-list {
+      margin-left: 30px;
+    }
+    .chapter-design-team-list-for-tablet {
+      display: none;
+    }
+    .chapter-design-team-item {
+      font-size: 17px;
+      line-height: 35px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      padding: 17.5px 0;
+    }
+    .image {
+      line-height: 0;
+      margin-right: 24px;
+      display: inline-block;
+      width: 24px;
+      flex: 0 0 auto;
+    }
+    .design-team-image {
+      max-width: 100%;
+      align-self: end;
+    }
+    .images-layered {
+      background-image: url("../../images/design-page-images/components.webp");
+      min-height: 580px;
+    }
+  }
+
+  .recent-project-by-chapter {
+    padding: 115px 116px 175px;
+    background-color: $pearl-drop3;
+    .recent-project-by-chapter-main-text {
+      padding-bottom: 120px;
+    }
+    // .recent-title {
+    //   font-weight: 700;
+    //   font-size: 50px;
+    //   line-height: 50px;
+    //   letter-spacing: 0;
+    // }
+    // recent-project-by-chapter-cards
+    .card {
+      background-color: $white;
+      border-radius: 20px;
+      position: relative;
+      box-shadow: 0px 0px 4.4px 0px rgba(0, 0, 0, 0.06),
+        0px 5px 19px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-image {
+      min-height: 507px;
+      border: 8px solid $white;
+      border-radius: 20px 20px 0 0;
+      border-bottom-width: 0px;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0;
+        position: absolute;
+        border-radius: 12px 12px 0 0;
+        transition: background-color 0.6s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          background-color: rgba(35, 31, 32, 0.4);
+        }
+      }
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .card-content {
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0;
+      }
+    }
+  }
+  .section-accordion .section-title {
+    padding-bottom: 30px;
+    border: none;
+  }
+  .ready-to-see-your-space {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .ready-content-wrapper {
+      background-color: $pearl-drop2;
+    }
+    .ready-content {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 115px 20px 60px;
+    }
+    .ready-content-main-text {
+      margin-bottom: 60px;
+    }
+
+    .para-content {
+      margin-bottom: 50px;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: 0;
+    }
+
+    .ready-image {
+      background-image: url("../../images/design-page-images/chapterimg.webp");
+      position: relative;
+    }
+    .image-water {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      background-color: rgba(35, 31, 32, 0.9);
+      padding: 0 42px;
+      width: auto;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 40px;
+      color: $white;
+    }
+    .ready-to-see-your-space-wrapper {
+      background-color: $pearl-drop3;
+    }
+    .ready-to-see-your-space-wrapper-for-tablet-and-below {
+      display: none;
+    }
+    .ready-to-see-your-space-layout {
+      max-width: 644px;
+      padding: 127px 0 82px;
+      margin: 0 auto;
+    }
+    .ready-row {
+      justify-content: space-between;
+    }
+    .ready-col {
+      max-width: 250px;
+      margin-bottom: 72px;
+    }
+    .card-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .grid-image {
+      margin-bottom: 24px;
+      img {
+        width: 60px;
+        height: auto;
+      }
+    }
+    .ready-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0;
+      margin-bottom: 8px;
+      font-family: "Inter";
+    }
+    .ready-para {
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: 0;
+    }
+    .ready-last-row {
+      justify-content: center;
+      .ready-col {
+        margin-bottom: 0;
+      }
+    }
+  }
+  // slick
+  .recent-project-by-chapter-cards .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 -6.5px;
+    width: 100%;
+    position: absolute;
+    bottom: -42px;
+  }
+  .recent-project-by-chapter-cards .slick-dots li {
+    padding: 0 6.5px;
+    line-height: 0;
+  }
+  .recent-project-by-chapter-cards .slick-dots button {
+    font-size: 0;
+    border: 0.25px solid transparent;
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    background-color: $light-pink;
+  }
+  .recent-project-by-chapter-cards .slick-dots .slick-active button {
+    background-color: $black;
+  }
+}
+
+@media (max-width: 1600px) {
+  .designs-page .intro-img {
+    min-height: 628px;
+  }
+  .designs-page .design-intro-section-text {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+
+  .designs-page .chapter-design-team .design-team-content {
+    padding: 115px 60px 66px;
+    max-width: 720px;
+  }
+  .designs-page .recent-project-by-chapter {
+    padding: 100px 80px 115px;
+  }
+  .designs-page .ready-to-see-your-space .ready-content {
+    padding: 115px 80px 60px;
+  }
+}
+// 1600 ends
+
+@media (max-width: 1500px) {
+  .designs-page
+    .our-interiors-design-process-wrapper
+    .interiors-design-process-cards-grid {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    row-gap: 32px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .designs-page .ready-to-see-your-space .ready-content {
+    padding: 80px 40px;
+  }
+  .designs-page .chapter-design-team .design-team-content {
+    padding: 80px 60px 66px;
+  }
+  .designs-page .our-interiors-design-process-wrapper {
+    padding: 80px 60px;
+  }
+  .designs-page .chapter-designer-owns-wrapper {
+    padding: 80px 131px 60px 131px;
+  }
+  .designs-page .chapter-design-team .images-layered {
+    min-height: 470px;
+  }
+  .designs-page .design-contractor {
+    padding: 80px 32px;
+  }
+
+  .designs-page .recent-project-by-chapter {
+    padding: 80px;
+  }
+  .designs-page h3 {
+    font-size: 20px;
+  }
+  .designs-page .recent-project-by-chapter .card-content h3 {
+    font-size: 17px;
+  }
+  .designs-page .recent-project-by-chapter {
+    padding: 100px 60px 115px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .designs-page .ready-to-see-your-space .ready-row {
+    justify-content: space-around;
+  }
+  .designs-page .chapter-design-team .images-layered {
+    min-height: 440px;
+  }
+}
+@media (max-width: 1199px) {
+  .designs-page .recent-project-by-chapter {
+    padding: 60px 0;
+  }
+  .designs-page
+    .recent-project-by-chapter
+    .recent-project-by-chapter-main-text {
+    padding-bottom: 80px;
+  }
+  .recent-project-by-chapter-cards.row {
+    margin: 0;
+  }
+  .recent-project-by-chapter-cards .slider-item {
+    padding: 0 30px;
+  }
+  .recent-project-by-chapter-cards .slick-list {
+    padding: 0 41px !important;
+  }
+  .designs-page .our-interiors-design-process-wrapper {
+    padding: 60px 30px;
+  }
+  .designs-page .our-interiors-design-process-wrapper .interior-main-text {
+    margin-bottom: 31px;
+  }
+  .designs-page .chapter-designer-owns-wrapper {
+    padding: 60px 131px 60px 131px;
+  }
+  .designs-page .design-contractor {
+    padding: 60px 32px;
+  }
+  .designs-page .chapter-design-team .design-team-content {
+    padding: 60px 60px 66px;
+  }
+  .designs-page .ready-to-see-your-space .ready-content {
+    padding: 60px 40px;
+  }
+  .designs-page .ready-to-see-your-space .ready-to-see-your-space-layout {
+    padding: 127px 10px 100px;
+  }
+  .designs-page .chapter-design-team .chapter-design-team-item {
+    padding: 10.5px 0;
+  }
+  .designs-page .design-intro-section-text {
+    padding-left: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .designs-page .chapter-design-team .design-team-content {
+    padding: 47px;
+  }
+  .designs-page .chapter-design-team .images-layered {
+    width: 597px;
+
+    min-height: 399px;
+  }
+}
+
+// for 1100 ends
+@media (max-width: 1023px) {
+  .designs-page .desktop-hide {
+    display: block;
+  }
+  .designs-page
+    .recent-project-by-chapter
+    .recent-project-by-chapter-main-text {
+    padding-bottom: 60px;
+  }
+  .recent-project-by-chapter-cards .slick-slide {
+    width: 428px !important;
+  }
+  .card-content h3 {
+    font-size: 14px;
+  }
+
+  .designs-page .design-intro-section-grid {
+    grid-template-columns: 1fr;
+    padding: 0 37px 37px;
+  }
+
+  .designs-page .design-intro-section-text .page-title-interior {
+    text-align: center;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .designs-page .design-intro-section-text .content {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  // table
+  .designs-page
+    .design-contractor
+    .design-contractor-table
+    .design-contractor-head {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "design-build-header design-build-header-two";
+    justify-items: center;
+  }
+  .design-build-header {
+    grid-area: design-build-header;
+  }
+  .design-build-header-two {
+    grid-area: design-build-header-two;
+  }
+
+  .designs-page
+    .design-contractor
+    .design-contractor-table
+    .design-contractor-body
+    .design-contractor-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header1 header1"
+      "para1 para2";
+    grid-template-rows: 50px 72px;
+    position: relative;
+  }
+  .header1 {
+    grid-area: header1;
+  }
+  .para1 {
+    grid-area: para1;
+  }
+  .para2 {
+    grid-area: para2;
+  }
+  .designs-page .design-contractor .design-contractor-main-text {
+    margin-bottom: 30px;
+  }
+  .designs-page .design-contractor .design-icon {
+    margin-right: 12px;
+    margin-left: 0;
+  }
+  .design-contractor-body-grid > *:nth-child(1) {
+    grid-row: 1;
+    background-color: #faf5ee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .designs-page .design-contractor .design-contractor-body > :nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  .designs-page .design-contractor .para1,
+  .designs-page .design-contractor .para2 {
+    padding-left: 64px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-right: 28px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .designs-page .design-contractor .para1 {
+    &::after {
+      background-image: url("../../images/design-page-images/greenIcon.svg");
+      left: 4%;
+      top: 74px;
+    }
+  }
+  .designs-page .design-contractor .para2 {
+    &::after {
+      background-image: url("../../images/design-page-images/redIcon.svg");
+      left: 53.5%;
+      top: 74px;
+    }
+  }
+  .designs-page .design-contractor .design-build-header,
+  .designs-page .design-contractor .design-build-header-two {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .designs-page .design-contractor .header1 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    padding-left: 24px;
+    letter-spacing: -0.07px;
+  }
+  // table ends
+
+  .designs-page .chapter-design-team {
+    grid-template-columns: 1fr;
+  }
+  .designs-page .chapter-design-team .images-layered {
+    justify-self: center;
+    min-height: 384px;
+  }
+
+  .designs-page .chapter-design-team .design-team-content {
+    padding: 60px 32px 30px 32px;
+    max-width: max-content;
+  }
+  .designs-page .chapter-design-team .design-para {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .designs-page .chapter-design-team .design-para {
+    max-width: 538px;
+  }
+  .designs-page .chapter-design-team .chapter-design-team-item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .designs-page .ready-to-see-your-space {
+    grid-template-columns: 1fr;
+  }
+  .designs-page .ready-to-see-your-space .ready-content-main-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .ready-content-para {
+    text-align: center;
+    .para-content {
+      max-width: 440px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .designs-page .ready-to-see-your-space .para-content {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .designs-page .ready-to-see-your-space .ready-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  .designs-page .ready-to-see-your-space .ready-para {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .designs-page .ready-to-see-your-space .grid-image img {
+    width: 32px;
+  }
+  .designs-page .ready-to-see-your-space .grid-image {
+    margin-bottom: 12px;
+  }
+  .designs-page .ready-to-see-your-space .ready-to-see-your-space-wrapper {
+    display: none;
+  }
+  .designs-page
+    .ready-to-see-your-space
+    .ready-to-see-your-space-wrapper-for-tablet-and-below {
+    display: block;
+  }
+  .designs-page .ready-to-see-your-space .ready-content {
+    max-width: none;
+    padding: 60px 40px 54px 40px;
+  }
+  .designs-page .ready-to-see-your-space .ready-to-see-your-space-layout {
+    max-width: none;
+  }
+  .designs-page .ready-to-see-your-space .ready-col {
+    max-width: none;
+    margin-bottom: 32px;
+  }
+  .designs-page .ready-to-see-your-space .ready-to-see-your-space-layout {
+    padding: 0 10px 30px;
+  }
+  .ready-to-see-your-space .ready-content-title {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .designs-page .ready-to-see-your-space .ready-image {
+    min-height: 343px;
+  }
+  .designs-page .chapter-designer-owns-wrapper {
+    padding: 60px 24px 24px 24px;
+  }
+  .designs-page .chapter-designer-owns-wrapper .chapter-designer-owns-grid {
+    max-width: 643px;
+    padding: 0;
+    margin-bottom: 54px;
+  }
+  .designs-page
+    .chapter-designer-owns-wrapper
+    .chapter-designer-owns-boxes
+    img {
+    width: 32px;
+  }
+  .designs-page .design-intro-section-text h1 {
+    line-height: 80px;
+    font-size: 70px;
+  }
+  .designs-page .our-interiors-design-process-wrapper .interiors-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+  }
+  .designs-page
+    .our-interiors-design-process-wrapper
+    .interiors-card-content
+    p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.028px;
+    line-height: 24px;
+  }
+  .designs-page .our-interiors-design-process-wrapper .interiors-card-content {
+    padding: 32px 32px 20px 32px;
+  }
+  .designs-page
+    .our-interiors-design-process-wrapper
+    .our-interior-image-wrapper {
+    padding: 25px 32px;
+  }
+  .designs-page .chapter-designer-owns-wrapper .designer-head-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .designs-page .design-intro-section-text {
+    max-width: 612px;
+    margin: 0 auto;
+    justify-items: center;
+    padding: 60px 0px 60px;
+    text-align: center;
+  }
+  .designs-page .intro-img {
+    min-height: 510px;
+  }
+  .designs-page .design-intro-section-text p {
+    max-width: 405px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .designs-page .recent-project-by-chapter .card-content h3 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0;
+  }
+  .designs-page .recent-project-by-chapter .card-content {
+    height: 65px;
+  }
+  .designs-page .ready-to-see-your-space .image-water {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+// for 1023 to 768 for Our interior design process strts for tablet
+@media (max-width: 1023px) and (min-width: 768px) {
+  .designs-page
+    .our-interiors-design-process-wrapper
+    .interiors-design-process-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 60px;
+  }
+  // tablet ends for interiror design process
+  .chapter-design-team-list {
+    display: none;
+  }
+  .designs-page .chapter-design-team .chapter-design-team-list-for-tablet {
+    display: block;
+    .chapter-design-team-item {
+      height: 60px;
+    }
+  }
+  .chapter-design-team-list-wrapped {
+    height: 180px;
+  }
+}
+
+@media (max-width: 390px) and (min-width: 320px) {
+}
+
+@media (max-width: 767px) {
+  .designs-page .btn-black-bg {
+    min-height: 45px;
+    min-width: 139px;
+    font-size: 13px;
+  }
+  .designs-page .recent-project-by-chapter .card-image {
+    min-height: 237px;
+  }
+  .recent-project-by-chapter-cards .slick-list {
+    padding: 0 28px !important;
+  }
+  .recent-project-by-chapter-cards .slick-slide {
+    padding: 0 12px;
+    width: 261px !important;
+  }
+  .designs-page .recent-project-by-chapter .card {
+    min-height: 296px;
+  }
+  .designs-page
+    .our-interiors-design-process-wrapper
+    .interiors-design-process-cards-grid {
+    grid-template-columns: 1fr;
+    padding: 60px 16px;
+  }
+  .designs-page .our-interiors-design-process-wrapper {
+    padding: 60px 20px;
+  }
+
+  .interiors-card-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .designs-page .chapter-design-team .images-layered {
+    width: 390px;
+    min-height: 236px;
+  }
+  .designs-page .ready-to-see-your-space .ready-row {
+    flex-direction: column;
+  }
+  .ready-content-para .para-content {
+    max-width: 350px;
+  }
+  .designs-page .ready-to-see-your-space .para-content {
+    margin-bottom: 40px;
+  }
+
+  .designs-page .ready-to-see-your-space .ready-image {
+    background-image: url("../../images/design-page-images/chaptergroupmobile.webp");
+    min-height: 174px;
+  }
+  // table
+  .designs-page
+    .design-contractor
+    .design-contractor-table
+    .design-contractor-body
+    .design-contractor-body-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header1 header1"
+      "para1 para1"
+      "para2 para2";
+  }
+  .designs-page .design-contractor .para1,
+  .designs-page .design-contractor .para2 {
+    padding: 12px 0px 12px 40px;
+  }
+  .designs-page .design-contractor .header1 {
+    padding-left: 24px;
+  }
+  .designs-page .design-contractor .para1::after {
+    left: 0;
+    top: 74px;
+    background-image: url(../../images/design-page-images/greenformobile.svg);
+  }
+  .designs-page .design-contractor .para2::after {
+    left: 0;
+    top: 132px;
+    background-image: url(../../images/design-page-images/redformobile.svg);
+  }
+  .chapter-designer-title {
+    max-width: 215px;
+    margin: 0 auto;
+  }
+  .designs-page .chapter-designer-owns-wrapper .chapter-designer-main-text {
+    margin-bottom: 30px;
+  }
+  .designs-page .chapter-designer-owns-wrapper .chapter-designer-owns-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+    margin-bottom: 36px;
+    max-width: 388px;
+  }
+
+  .designs-page .chapter-designer-owns-wrapper .chapter-designer-owns-prints {
+    flex-direction: column;
+  }
+  .designs-page .chapter-designer-owns-wrapper {
+    padding: 60px 16px 0px 16px;
+  }
+  .chapter-designer-owns-prints img {
+    display: block;
+  }
+  .designs-page .design-intro-section-text h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .designs-page .design-intro-section-grid {
+    padding: 0 20px 30px;
+  }
+  .designs-page .design-intro-section-text {
+    padding: 30px 0;
+  }
+  .designs-page .line {
+    height: 38px;
+  }
+  .designs-page .text-label-wrap {
+    margin-bottom: 30px;
+  }
+  .designs-page .intro-img {
+    min-height: 329px;
+  }
+  .designs-page .design-intro-section-text p {
+    line-height: 30px;
+  }
+  .designs-page .ready-to-see-your-space .ready-content {
+    padding: 30px 20px;
+  }
+  .designs-page .ready-to-see-your-space .ready-to-see-your-space-layout {
+    padding: 0 10px 30px;
+  }
+  .ready-to-see-your-space .ready-content-title {
+    max-width: 250px;
+  }
+  .designs-page .design-contractor {
+    padding: 60px 20px;
+  }
+  .designs-page
+    .design-contractor
+    .design-contractor-table
+    .design-contractor-head {
+    grid-template-columns: 0.4fr 0.4fr;
+    justify-content: center;
+  }
+  .designs-page .design-contractor .design-icon {
+    flex: 1 0 17px;
+  }
+  .designs-page .ready-to-see-your-space .image-water {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 391px) {
+  .designs-page .chapter-design-team .images-layered {
+    width: 320px;
+    min-height: 193px;
+  }
+}

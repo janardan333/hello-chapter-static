@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Times';
+    src: url('Times-Roman.eot');
+    src: url('Times-Roman.eot?#iefix') format('embedded-opentype'),
+        url('Times-Roman.woff2') format('woff2'),
+        url('Times-Roman.woff') format('woff'),
+        url('Times-Roman.ttf') format('truetype'),
+        url('Times-Roman.svg#Times-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

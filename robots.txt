@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hellochapter.com/sitemap.xml
+Sitemap: https://www.hellochapter.com/sitemap.xml
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
