@@ -4,10 +4,10 @@ paths:
   static: ''
 collections_config:
   js:
-    path: blog/
+    path: ''
     name:
     icon: 1k
-    url: /blog/:filename/
+    url: /index/
     disable_url: false
     description: ''
     _enabled_editors:
