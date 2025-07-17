@@ -7,7 +7,7 @@ collections_config:
     path: ''
     name:
     icon: 1k
-    url: /index/
+    url: /index.html
     disable_url: false
     description: ''
     _enabled_editors:
