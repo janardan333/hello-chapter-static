@@ -8,6 +8,7 @@ collections_config:
     name:
     icon: 1k
     url: /blog/:filename/
+    disable_url: false
     description: ''
     _enabled_editors:
     disable_add: false
