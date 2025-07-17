@@ -4,7 +4,7 @@ paths:
   static: ''
 collections_config:
   js:
-    path: /blog
+    path: blog/
     name:
     icon: 1k
     url: /blog/:filename/
